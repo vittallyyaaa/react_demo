@@ -1,0 +1,17 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./themes.css";
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}

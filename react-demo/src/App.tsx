@@ -1,7 +1,8 @@
 function App() {
   return (
     <div>
-      1
+      <p>Текст Neometric</p>
+      <h1 style={{ fontFamily: "Meidinger" }}>HELLO</h1>
     </div>
   );
 }

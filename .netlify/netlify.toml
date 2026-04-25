@@ -1,0 +1,30 @@
+plugins = []
+functionsDirectory = "D:\\react\\react_demo\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "D:\\react\\react_demo"
+publishOrigin = "default"
+commandOrigin = "config"
+command = "# no build command"
+functions = "D:\\react\\react_demo\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
