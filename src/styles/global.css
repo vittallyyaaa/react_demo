@@ -40,6 +40,16 @@ section {
   margin-right: auto;
 }
 
+.section-surface {
+  background-color: var(--color-surface);
+  width: 100%;
+  max-width: 100%;
+}
+
+section .section-surface {
+  background-color: var(--color-surface);
+}
+
 .button-main {
   background-color: var(--color-primary);
   color: white;
@@ -64,6 +74,11 @@ canvas {
 
 svg {
   color: currentColor;
+}
+
+
+.additional-text {
+    color: var(--color-additional);
 }
 
 button,
@@ -105,6 +120,11 @@ h6
  {
   margin: 0;
   font-weight: 700;
+}
+
+
+h1 {
+      font-size: 48px;
 }
 
 .container {

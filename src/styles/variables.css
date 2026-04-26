@@ -1,8 +1,9 @@
 :root {
-  --color-bg: #101016;
+  --color-bg: #13131a;
   --color-surface: #242331;
   --color-text: #fff;
   --color-primary: #385AE9;
+  --color-additional: #6d6d6d;
 
   --font-body: 'Neometric', sans-serif;
 }
