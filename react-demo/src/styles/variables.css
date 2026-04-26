@@ -1,9 +1,8 @@
 :root {
-  --color-bg: #242331;
-  --color-surface: #3D3B54;
+  --color-bg: #101016;
+  --color-surface: #242331;
   --color-text: #fff;
   --color-primary: #385AE9;
 
-  --font-heading: 'ClimateCrisis', sans-serif;
   --font-body: 'Neometric', sans-serif;
 }

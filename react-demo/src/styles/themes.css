@@ -2,5 +2,12 @@
   --color-bg: #fff;
   --color-surface: #EDEDED;
   --color-text: #111;
-    --color-primary: #385AE9;
+  --color-primary: #385ae9;
+}
+
+[data-theme="dark"] {
+  --color-bg: #000;
+  --color-surface: #242331;
+  --color-text: #fff;
+  --color-primary: #385ae9;
 }

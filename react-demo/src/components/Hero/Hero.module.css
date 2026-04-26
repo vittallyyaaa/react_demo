@@ -1,0 +1,114 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainTextSpan {
+    font-size: 48px;
+}
+
+h1 {
+    font-size: 96px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-size: 96px;
+  line-height: 0.9;
+}
+
+.titleSmall {
+  font-size: 48px;
+}
+
+.price {
+  margin-top: 20px;
+}
+
+
+.images {
+  position: relative;
+  width: min(100%, 1100px);
+  height: 520px;
+  margin: 40px auto 0;
+}
+
+.headset {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 650px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.controllerLeft {
+  position: absolute;
+  left: 0;
+  top: -250px;
+  width: 260px;
+  z-index: 1;
+  animation: float 4s ease-in-out infinite;
+}
+
+.controllerRight {
+  position: absolute;
+  right: 0;
+  top: -150px;
+  width: 260px;
+  z-index: 1;
+  animation: float 4s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 56px;
+  }
+
+  .titleSmall {
+    font-size: 32px;
+  }
+
+  .images {
+    height: 360px;
+  }
+
+  .headset {
+    width: 420px;
+  }
+
+  .controllerLeft,
+  .controllerRight {
+    display: none;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+

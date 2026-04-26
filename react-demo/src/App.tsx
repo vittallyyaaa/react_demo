@@ -1,8 +1,11 @@
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+
 function App() {
   return (
     <div>
-      <p>Текст Neometric</p>
-      <h1 style={{ fontFamily: "Meidinger" }}>HELLO</h1>
+      <Header />
+      <Hero />
     </div>
   );
 }

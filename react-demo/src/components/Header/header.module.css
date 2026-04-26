@@ -1,0 +1,147 @@
+.header {
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+  z-index: 200;
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--color-text);
+}
+
+.logo svg {
+  width: 150px;
+  height: 45px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navList a {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.mobileActions {
+  display: none;
+}
+
+.iconLink,
+.switchButton {
+  width: 24px;
+  height: 24px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switchButton {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.burger {
+  display: none;
+  width: 28px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 100%;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 999px;
+}
+
+.burgerOpen span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.burgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerOpen span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .actions {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+ .nav {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: var(--color-bg);
+    padding: 28px 0;
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    z-index: 100;
+  }
+
+  .navOpen {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .mobileActions {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}
