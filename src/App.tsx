@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import Features from "./components/Features/Features";
 import Games from "./components/Games/Games";
 import Details from "./components/Details/Details";
+import AdditionalInfo from "./components/AdditionalInfo/AdditionalIndo";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features />
       <Games />
       <Details />
+      <AdditionalInfo />
     </div>
   );
 }
