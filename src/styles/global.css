@@ -147,3 +147,9 @@ h1 {
   transform: translateX(10px);
   transition: .2s ease-in-out;
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+}
