@@ -1,5 +1,6 @@
 import styles from "./Features.module.css";
-import fullDevice from "../../assets/img/full-device.avif"
+import fullDevice from "../../assets/img/full-device.avif";
+import arrowRight from "../../assets/icons/arrow-right.svg";
 
 function Features() {
   return (
@@ -13,8 +14,11 @@ function Features() {
           A blazing fast processor <br /> and next-generation graphics.
         </p>
 
-        <a className={styles.activeLink} href="#learn-more">
+        <a className="link-arrow" href="#learn-more">
           Learn more
+          <span>
+            <img src={arrowRight} />
+          </span>
         </a>
       </div>
 
@@ -146,11 +150,7 @@ function Features() {
           </span>
         </li>
       </ul>
-      <img
-          src={fullDevice}
-          className={styles.fullDevice}
-          alt="Device"
-        />
+      <img src={fullDevice} className={styles.fullDevice} alt="Device" />
     </section>
   );
 }

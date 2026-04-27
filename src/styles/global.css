@@ -79,6 +79,7 @@ svg {
 
 .additional-text {
     color: var(--color-additional);
+    max-width: 500px;
 }
 
 button,
@@ -131,4 +132,18 @@ h1 {
   width: min(90%, 1200px);
   margin-inline: auto;
 }
+.link-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+  font-weight: 700;
+}
 
+.link-arrow span {
+  transition: transform .2s ease-in-out;
+}
+
+.link-arrow:hover span {
+  transform: translateX(10px);
+  transition: .2s ease-in-out;
+}
