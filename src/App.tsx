@@ -4,6 +4,7 @@ import Features from "./components/Features/Features";
 import Games from "./components/Games/Games";
 import Details from "./components/Details/Details";
 import AdditionalInfo from "./components/AdditionalInfo/AdditionalIndo";
+import WhatsIncluded from "./components/WhatsIncluded/WhatsIncluded";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Games />
       <Details />
       <AdditionalInfo />
+      <WhatsIncluded />
     </div>
   );
 }

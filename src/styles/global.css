@@ -58,6 +58,9 @@ section .section-surface {
   border-radius: 30px;
   border: solid 2px var(--color-primary);
   margin-top: 20px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  
 }
 .button-main:hover {
   background-color: transparent;
