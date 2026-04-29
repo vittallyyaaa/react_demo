@@ -1,0 +1,141 @@
+.otherProducts {
+  padding: 50px 0;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.mainParagraph {
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 40px;
+  max-width: 520px;
+}
+
+/* 🔥 контейнер для двох рядків */
+.productsRows {
+  width: min(90%, 1000px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 🔥 базовий ряд */
+.row {
+  display: grid;
+  gap: 16px;
+}
+
+/* 🔥 перший ряд: широка + вузька */
+.rowTop {
+  grid-template-columns: 1.4fr 0.9fr;
+}
+
+/* 🔥 другий ряд: вузька + широка */
+.rowBottom {
+  grid-template-columns: 0.9fr 1.4fr;
+}
+
+/* 🔥 картка */
+.card {
+  position: relative;
+  min-height: 360px;
+  padding: 28px;
+  border-radius: 20px;
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+/* заголовок */
+.cardTitle {
+  max-width: 220px;
+  font-size: 16px;
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
+}
+
+/* 🔥 картинка */
+.cardImage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+/* 🔥 індивідуальні розміри */
+.rowTop .card:first-child .cardImage {
+  max-width: 200px;
+}
+
+.rowTop .card:last-child .cardImage {
+  max-width: 200px;
+  top: 230px;
+}
+
+.rowBottom .card:first-child .cardImage {
+  max-width: 200px;
+  top: 230px;
+}
+
+.rowBottom .card:last-child .cardImage {
+  max-width: 250px;
+}
+
+/* низ картки */
+.cardBottom {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* кнопка */
+.cartButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 500;
+  border: solid 1px var(--color-primary);
+}
+
+.cartButton:hover {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+}
+
+
+/* 🔥 адаптив */
+@media (max-width: 768px) {
+  .productsRows {
+    width: 100%;
+  }
+
+  .rowTop,
+  .rowBottom {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 320px;
+  }
+
+  .cardImage {
+    max-width: 200px !important;
+  }
+}
