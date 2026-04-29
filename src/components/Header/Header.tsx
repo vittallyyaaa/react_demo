@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Header.module.css";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <a href="#" className={styles.logo} aria-label="Oculus">
+        <Link to="/" className={styles.logo} aria-label="Oculus">
           <svg
             className="logo"
             width="150"
@@ -81,13 +82,13 @@ function Header() {
               </clipPath>
             </defs>
           </svg>
-        </a>
+        </Link>
 
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ""}`}>
           <ul className={styles.navList}>
             <li><a href="#">PRODUCTS</a></li>
             <li><a href="#">APPS & GAMES</a></li>
-            <li><a href="#">SUPPORT</a></li>
+            <li><Link to="/support">SUPPORT</Link></li>
           </ul>
 
           <div className={styles.mobileActions}>
