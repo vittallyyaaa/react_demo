@@ -6,6 +6,7 @@ import Details from "./components/Details/Details";
 import AdditionalInfo from "./components/AdditionalInfo/AdditionalIndo";
 import WhatsIncluded from "./components/WhatsIncluded/WhatsIncluded";
 import OtherProducts from "./components/OtherProducts/OtherProducts"
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <AdditionalInfo />
       <WhatsIncluded />
       <OtherProducts />
+      <Footer />
     </div>
   );
 }
